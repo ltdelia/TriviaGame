@@ -20,20 +20,32 @@
 
 	<!-- Bootstrap Grid -->
 	<div class="container">
+	<!-- Spacer to keep Jumbotron from Header -->
 		<div class="row">
 			<div class="col-lg-12">
 				<br>
 			</div>
 		</div>
+	<!-- Jumbotron containing Game Content -->
 		<div class="row">
 			<div class="jumbotron maincontent">
   				<h1>Trivia Time: Music from the 1960s!</h1>
-  				<div class="row" id="question">
   				<p>Answer as many questions as possible in 2 minutes.</p>
-  					<a class="btn btn-warning btn-lg start" href="#" role="button">
+  	<!-- div to replace game content with final score -->
+  				<div id="done">
+  	<!-- Timer div, replaces Get Started button -->
+  					<div id="timer">
+  	<!-- Get Started button -->
+  					<a class="btn btn-warning btn-lg start" id="timer" href="#" role="button">
   						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
   						Get Started
   					</a>
+  					</div>
+  	<!-- Question div, holding appended questions in form element -->
+  					<div class="row" id="question">
+  				  		<form id="question">
+  						</form>
+					</div>
 				</div>
 			</div>
 		</div>
